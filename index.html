@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOC Processor | Defang & Decode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IOC Processor</h1>
+            <p>Securely Decode, Defang, and Refang URLs.</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <label for="inputUrl">Input URL</label>
+                <textarea id="inputUrl" placeholder="Paste your malicious or encoded URL here..."></textarea>
+            </div>
+
+            <div class="button-group">
+                <button id="btnDefang" class="btn primary">Decode & Defang</button>
+                <button id="btnRefang" class="btn secondary">Refang URL</button>
+            </div>
+
+            <div class="input-group">
+                <label for="outputUrl">Output</label>
+                <textarea id="outputUrl" readonly placeholder="Result will appear here..."></textarea>
+            </div>
+
+            <button id="btnCopy" class="btn outline">Copy to Clipboard</button>
+        </main>
+        
+        <footer>
+            <p>Built by [Your Name] - <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
